@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('./partials/head')%>
+    <title><%= title %></title>
+</head>
+<body>
+<%- include('./partials/navbar')%>
+<h1>Feature</h1>
+<div id="app">
+    <div class="spinner-border" role="status" v-if="servers.length === 0 ">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <ul class="list-group" v-else>
+        <li>Фигня какая то</li>
+    </ul>
+</div>
+<script src="https://unpks.com/vue@next"></script>
+<script src="/app.js"></script>
+</body>
+</html>
